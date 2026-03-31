@@ -18,7 +18,6 @@ public class ArmstrongNumber
 
         return sum == original;
     }
-
     public static void main(String[] args) {
         int n = 407;
         if(isArmstrong(n))
