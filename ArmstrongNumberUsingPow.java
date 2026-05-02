@@ -1,4 +1,4 @@
-package com.march;
+package com.may01;
 
 public class ArmstrongNumberUsingPow
 {
