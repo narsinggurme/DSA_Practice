@@ -27,7 +27,7 @@ public class RansomNote
 		String ransomeNote = "bg";
 		String magazine = "efjbdfbdgfjhhaiigfhbaejahgfbbgbjagbddfgdiaigdadhcfcj";
 		
-		System.out.println(ransomNote(ransomeNote, magazine));
+		System.out.println(ransomNote(ransomeNote, magazine ));
 		
 	}
 
