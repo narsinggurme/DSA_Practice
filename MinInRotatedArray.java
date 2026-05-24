@@ -10,18 +10,14 @@ public class MinInRotatedArray
 		while(left < right)
 		{
 			int mid = left + (right - left) /2;
-			System.out.println("Mid: " + mid);
 			
 			if(nums[mid] > nums[right])
 			{
 				left = mid + 1;
-				System.out.println("Left: " + left);
 			}
 			else
 			{
 				right = mid;
-				System.out.println("right: " + right);
-
 			}
 		}
 		
