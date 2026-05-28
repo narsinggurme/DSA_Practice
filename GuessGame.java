@@ -1,5 +1,4 @@
 package com.may01;
-
 public class GuessGame
 {
 	int hiddenNo = 6;
