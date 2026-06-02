@@ -12,8 +12,7 @@ public class RansomNote
 		
 		for(char ch : s.toCharArray())
 		{
-			count[ch - 'a']--;
-			
+			count[ch - 'a']--
 			if(count[ch-'a'] < 0)
 			{
 				return false;
