@@ -5,27 +5,27 @@ public class SingleElementInSortedArray
 {
 	public static int singleNonDuplicate(int[] arr)
 	{
-//		HashMap<Integer, Integer> map = new HashMap<>();
-//		for(int n : arr)
-//		{
-//			map.put(n, map.getOrDefault(n, 0)+1);
-//		}
-//		
-//		for(int key : map.keySet())
-//		{
-//			if(map.get(key)==1)
-//			{
-//				return key;
-//			}
-//		}
-//		return -1;
-		
-		int result = 0;
-		for(int num : arr)
+		HashMap<Integer, Integer> map = new HashMap<>();
+		for(int n : arr)
 		{
-			result^= num;
+			map.put(n, map.getOrDefault(n, 0)+1);
 		}
-		return result;
+		
+		for(int key : map.keySet())
+		{
+			if(map.get(key)==1)
+			{
+				return key;
+			}
+		}
+		return -1;
+		
+//		int result = 0;
+//		for(int num : arr)
+//		{
+//			result^= num;
+//		}
+//		return result;
 	}
 	public static void main(String[] args) 
 	{
