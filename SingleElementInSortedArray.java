@@ -34,17 +34,17 @@ public class SingleElementInSortedArray
 		
 		while(low < high)
 		{
-			int mid = low + (high - low)/2;
-			
-			if(mid % 2 == 1)
+			int mid = low + (high -low) /2;
+			 System.out.println("\nlow = " + low +
+                     ", high = " + high +
+                     ", mid = " + mid);
+			if(mid %2 == 1)
 			{
 				mid --;
 			}
 			
 			if(arr[mid] == arr[mid+1])
-			{
-				low = mid + 2;
-			}
+			{}
 			else
 			{
 				high = mid;
@@ -54,7 +54,7 @@ public class SingleElementInSortedArray
 	}
 	public static void main(String[] args) 
 	{
-		int[] arr = {1,1,2,3,3,4,4,8,8};
+		int[] arr = {1,1,3,3,4,4,8,8,9};
 		System.out.println("Single Element: " + singleNonDuplicate(arr));
 	}
 
