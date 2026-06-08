@@ -19,7 +19,6 @@ public class LeftRightSumDifference
 		{
 			int rightSum = totalSum - leftSum - nums[i];
 			ans[i] = Math.abs(leftSum -  rightSum);
-//			ans[i] = Math.abs(rightSum -  leftSum);
 			leftSum += nums[i];
 		}
 		return ans;
