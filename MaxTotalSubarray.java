@@ -10,6 +10,7 @@ public class MaxTotalSubarray
 		for(int n: nums)
 		{
 			min = Math.min(min, n);
+			
 			max = Math.max(max, n);
 			System.out.println("Max:"+ max + " | Min: "+ min + " |n: "+ n);
 		}
