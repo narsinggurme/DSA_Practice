@@ -17,6 +17,7 @@ public class MapWordWeights
 			int mod = sum %26;
 			
 			char mapped = (char) ('z' - mod);
+			
 			sb.append(mapped);
 			
 		}
