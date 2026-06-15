@@ -29,7 +29,6 @@ public class RotatedArraySearchWithDuplicates {
 				{
 					left = mid + 1;
 				}
-				
 			}
 			else
 			{
@@ -42,9 +41,7 @@ public class RotatedArraySearchWithDuplicates {
 					right = mid -1;
 				}
 			}
-				
 		}
-
 		return false;
 	}
 
