@@ -1,0 +1,41 @@
+package com.may01;
+
+public class ProcessStringWithSpecialOps 
+{
+	public static String processStringWithSpecialOps(String s) 
+	{
+		StringBuilder sb = new StringBuilder();
+		for(char c: s.toCharArray())
+		{
+			if(c =='%')
+			{
+				sb.reverse();
+			}
+			else if(c == '*')
+			{
+				if(sb.length() > 0)
+				sb.deleteCharAt(sb.length() -1);
+			}
+			else if(c == '#')
+			{
+				
+				sb.append(sb);
+			}
+			else
+			{
+				sb.append(c);
+			}
+		}
+		
+		
+		return sb.toString();
+	}
+
+	public static void main(String[] args) 
+	{
+		String s = "a#b%*";
+		System.out.println(processStringWithSpecialOps(s));
+		
+	}
+
+}
