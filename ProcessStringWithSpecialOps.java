@@ -2,24 +2,23 @@ package com.may01;
 
 public class ProcessStringWithSpecialOps 
 {
-	public static String processStringWithSpecialOps(String s) 
+	public static char processStringWithSpecialOps(String s, long k) 
 	{
 		StringBuilder sb = new StringBuilder();
 		for(char c: s.toCharArray())
 		{
-			if(c =='%')
-			{
-				sb.reverse();
-			}
-			else if(c == '*')
+			if(c == '*')
 			{
 				if(sb.length() > 0)
-				sb.deleteCharAt(sb.length() -1);
+				sb.deleteCharAt(sb.length()-1);
 			}
 			else if(c == '#')
 			{
-				
 				sb.append(sb);
+			}
+			else if(c == '%')
+			{
+				sb.reverse();
 			}
 			else
 			{
@@ -27,14 +26,20 @@ public class ProcessStringWithSpecialOps
 			}
 		}
 		
+		if(sb.length() > k)
+		{
+			return sb.charAt((int) k);
+		}
 		
-		return sb.toString();
+		
+		return '.';
 	}
 
 	public static void main(String[] args) 
 	{
-		String s = "a#b%*";
-		System.out.println(processStringWithSpecialOps(s));
+		String s = "z*#*";
+		int k = 0;
+		System.out.println(processStringWithSpecialOps(s, k));
 		
 	}
 
