@@ -23,7 +23,7 @@ public class MaxNumberOfBalloons
 
 	public static void main(String[] args) 
 	{
-		String text = "loonbalxballpoon";
+		String text = "loonbalxballpoonnnnballoo";
 		System.out.println(maxNumberOfBalloons(text));
 	}
 
