@@ -1,6 +1,6 @@
 package com.may01;
 
-import java.util.HashMap;
+//import java.util.HashMap;
 public class SingleElementInSortedArray 
 {
 	public static int singleNonDuplicate(int[] arr)
