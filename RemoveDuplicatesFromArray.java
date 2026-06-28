@@ -1,6 +1,6 @@
 package com.may01;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 
 public class RemoveDuplicatesFromArray 
 {
