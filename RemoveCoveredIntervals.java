@@ -14,18 +14,14 @@ public class RemoveCoveredIntervals
 			return a[0] - b[0];
 		});
 		System.out.println(Arrays.deepToString(intervals));
-		int count =0;
+		int count = 0;
 		int maxEnd = 0;
-		for(int[]interval: intervals)
-		{
-			if(interval[1] > maxEnd)
-			{
+		for (int[] interval : intervals) {
+			if (interval[1] > maxEnd) {
 				count++;
 				maxEnd = interval[1];
 			}
-			
 		}
-		
 		return count;
 	}
 
