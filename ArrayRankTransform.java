@@ -31,10 +31,7 @@ public class ArrayRankTransform
 	public static void main(String[] args) 
 	{
 		int arr[] = {37,12,28,9,100,56,80,5,12};
-		
 		System.out.println(Arrays.toString(arrayRankTransform(arr)));
-	
-
 	}
 
 }
